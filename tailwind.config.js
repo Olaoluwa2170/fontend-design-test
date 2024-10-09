@@ -7,8 +7,8 @@ export default {
         jost: ["Jost, sans-serif"],
       },
       colors: {
-        primary: {'100' : '#707070'}
-      }
+        primary: { 100: "#707070" },
+      },
     },
   },
   plugins: [],
