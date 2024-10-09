@@ -1,9 +1,12 @@
-import { Navbar } from "./components";
+import { Navbar, HeroSection } from "./components";
 
 function App() {
   return (
     <>
       <Navbar />
+      <div className="pt-[6rem]">
+        <HeroSection />
+      </div>
     </>
   );
 }
