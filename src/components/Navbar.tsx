@@ -4,24 +4,55 @@ import { ChevronDown } from "lucide-react";
 import { cn } from "../lib/utils";
 
 const Navbar = () => {
-  const [click, setClick] = useState(false)
+  const [click, setClick] = useState(false);
 
   return (
-    <nav className="md:min-h-[5rem] w-full bg-primary-100 border-b border-white">
+    <nav
+      className={cn(
+        "md:min-h-[5rem] md:h-auto h-[5rem] overflow-hidden w-full bg-primary-100 border-b duration-300 border-white fixed z-10",
+        {
+          "h-[55vh]": click,
+        },
+      )}
+    >
       <div className="flex justify-between items-center">
         <div className="flex items-center w-full md:w-fit">
           <div className="md:border-r md:px-8 py-2 border-white w-fit">
             <img src={logo} alt="logo" className="w-[80px] object-contain" />
           </div>
-          <div onClick={() => setClick(!click)} className={cn("md:hidden cursor-pointer flex flex-col items-end w-full pr-3", {
-            'gap-2' : !click
-          })}>
-              <div className={cn("h-[2px] rounded-3xl w-5 bg-white duration-300 rotate-45", {
-                'rotate-0 pr-8' : !click
-              })}></div>
-              <div className={cn("h-[2px] rounded-3xl w-5 bg-white duration-300 -rotate-45", {
-                'rotate-0' : !click
-              })}></div>
+          <div className="md:hidden flex justify-end items-center gap-2 w-full">
+            <div>
+              <img
+                src="./search.png"
+                className={cn("w-5 cursor-pointer", {
+                  hidden: click,
+                })}
+                alt="search"
+              />
+            </div>
+            <div
+              onClick={() => setClick(!click)}
+              className={cn("cursor-pointer w-fit py-2 flex flex-col px-3", {
+                "gap-2": !click,
+              })}
+            >
+              <div
+                className={cn(
+                  "h-[2px] rounded-3xl w-5 bg-white duration-300 rotate-45",
+                  {
+                    "rotate-0 pr-8": !click,
+                  },
+                )}
+              ></div>
+              <div
+                className={cn(
+                  "h-[2px] rounded-3xl w-5 bg-white duration-300 -rotate-45",
+                  {
+                    "rotate-0": !click,
+                  },
+                )}
+              ></div>
+            </div>
           </div>
           <div>
             <ul className="md:flex hidden pl-20 font-jost text-white font-semibold text-lg">
@@ -32,7 +63,7 @@ const Navbar = () => {
                 >
                   {link.toUpperCase()}{" "}
                   <ChevronDown
-                    className={cn("w-3 mt-1 cursor-pointer", {
+                    className={cn("text-gray-700 cursor-pointer", {
                       hidden: link != "Services",
                     })}
                   />
@@ -56,6 +87,34 @@ const Navbar = () => {
             <p>Need help?</p>
             <p className="font-semibold">+234 8004023</p>
           </div>
+        </div>
+      </div>
+      <div
+        className={cn("md:hidden pl-2 mt-5 duration-500", {
+          "translate-x-5": click,
+          "translate-x-0": !click,
+        })}
+      >
+        <ul className="">
+          {navLink.map((link) => (
+            <li
+              key={link}
+              className={cn(
+                "py-1 font-jost  text-gray-200 font-semibold text-lg",
+              )}
+            >
+              {link}
+            </li>
+          ))}
+        </ul>
+        <div className="flex gap-2 mt-5">
+          {socials.map((link) => (
+            <img className={cn("w-5 cursor-pointer")} key={link} src={link} />
+          ))}
+        </div>
+        <div className="font-jost mt-8 flex text-base flex-col text-white justify-center pr-10">
+          <p>Need help?</p>
+          <p className="">+234 8004023</p>
         </div>
       </div>
     </nav>
