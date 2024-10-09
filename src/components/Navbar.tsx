@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import logo from "../assets/images/endeavor.png"; // Ensure this path is correct and the file exists
 import { ChevronDown } from "lucide-react";
 import { cn } from "../lib/utils";

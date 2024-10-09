@@ -1,6 +1,6 @@
-import React from "react";
 import DefaultWidth from "./tools/DefaultWidth";
 import HeroImage from "../assets/images/HeroImage.png";
+
 
 const HeroSection = () => {
   return (
@@ -35,7 +35,7 @@ const HeroSection = () => {
             The best business consulting firm you can count on!
             </p>
             <div>
-                
+
             </div>
           </div>
         </DefaultWidth>
