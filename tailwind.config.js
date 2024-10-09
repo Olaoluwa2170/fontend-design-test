@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         jost: ["Jost, sans-serif"],
       },
+      colors: {
+        primary: {'100' : '#707070'}
+      }
     },
   },
   plugins: [],
