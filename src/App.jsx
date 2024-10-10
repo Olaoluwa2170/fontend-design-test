@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="pt-[6rem]">
+      <div className="md:pt-[6rem]">
         <HeroSection />
         <Body />
       </div>

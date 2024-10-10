@@ -10,7 +10,8 @@ export default {
       colors: {
         primary: {
           100: "#707070",
-          tdefault: '#0F0D1D',
+          tdefault: "#0F0D1D",
+          t200: "#3C72FC",
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
