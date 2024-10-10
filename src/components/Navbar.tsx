@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav
       className={cn(
-        "md:min-h-[5rem] md:h-fit h-[5rem] overflow-hidden w-full bg-primary-100 border-b duration-300 border-white fixed top-0 z-1",
+        "md:min-h-[5rem] md:h-fit h-[5rem] overflow-hidden w-full bg-primary-100 border-b duration-300 border-white fixed top-0 z-10",
         {
           "h-[55vh]": click,
         },
