@@ -135,91 +135,74 @@ const Body = () => {
           </div>
         </div>
       </section>
-      <section>
-        <section className="flex flex-col justify-center items-center my-[6.25rem]">
-          <div className="flex flex-col items-center justify-center">
-            <h1 className="text-[2.8125rem] leading-[3.375rem] text-text-100 font-bold text-center">
-              FAQ
-            </h1>
-            <p className="text-[0.9375rem] leading-[0.9375rem] font-roboto font-light text-center mt-1">
-              Frequently asked questions
-            </p>
-          </div>
-
-          <div className="flex md:flex-row flex-col justify-center md:mt-5 items-center md:items-end gap-16 md:h-[70vh]">
-            <Accordion
-              type="single"
-              collapsible
-              className="md:w-[586px] w-[350px] mx-auto"
-            >
-              {FaqList.map((item, index) => (
-                <AccordionItem
-                  key={index}
-                  value={`item-${index + 2}`}
-                  className="data-[state=open]:rounded data-[state=closed]:bg-[#F2F4F8] my-5 data-[state=open]:shadow-lg data-[state=open]:border"
-                >
-                  <AccordionTrigger className="hover:no-underline text-[1rem] text-text-200 leading-[1.25rem] p-8 font-[900]">
-                    <p>
-                      <span className="text-primary-t200 pr-5">
-                        0{index + 1}
-                      </span>
-                      {item.title}
-                    </p>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-base leading-6 font-roboto p-5 text-text-200">
-                    {item.content}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-
-            <div>
-              <div className="h-full flex flex-col justify-end pb-4 md:pl-8">
-                <p className="flex gap-4">
-                  <span className="">
-                    <Check className="text-primary-t200" />
-                  </span>{" "}
-                  Lorem ipsum dolor sit amet.
-                </p>
-                <p className="flex gap-4">
-                  <span className="">
-                    <Check className="text-primary-t200" />
-                  </span>{" "}
-                  Lorem ipsum dolor sit amet. Lorem.
-                </p>
-                <p className="flex gap-4">
-                  <span className="">
-                    <Check className="text-primary-t200" />
-                  </span>{" "}
-                  Lorem ipsum dolor sit amet. Lorem, ipsum.
-                </p>
-                <p className="flex gap-4">
-                  <span className="">
-                    <Check className="text-primary-t200" />
-                  </span>{" "}
-                  Lorem ipsum dolor sit amet. Lorem, ipsum.
-                </p>
-                <p className="flex gap-4">
-                  <span className="">
-                    <Check className="text-primary-t200" />
-                  </span>{" "}
-                  Lorem ipsum dolor sit amet. Lorem ipsum.
-                </p>
-              </div>
-            </div>
-            <div className="bg-primary-t200 w-[150px] h-[130px] flex justify-center items-center">
-              <div className="text-white">
-                <p className="text-4xl font-bold text-center">30</p>
-                <p className="w-[5.625rem] text-center text-base font-semibold">
-                  Years of Experience
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </section>
+      <Faq />
       <section className="bg-[#f2f4f8] py-[70px] md:py-[100px]">
         <Testimony />
+      </section>
+      <section className="bg-[#0c1731] pt-[100px] pb-[200px]">
+        <DefaultWidth>
+          <div className="grid grid-cols-2  space-y-5 md:space-y-0 md:grid-cols-4 ">
+            <div className="text-white flex flex-col mt-5 md:mt-0 items-center space-y-2 w-full justify-center">
+              <div className="w-[110px] h-[110px] bg-black flex justify-center items-center">
+                <img
+                  src="./brainstorming.png"
+                  className="w-[62px] h-[62px]"
+                  alt=""
+                />
+              </div>
+              <p className="font-bold text-center text-2xl">420</p>
+              <p className="text-sm font-bold text-center">
+                CONSULTANT SOLUTIONS
+              </p>
+            </div>
+            <div className="text-white flex flex-col items-center space-y-2 w-full border-l-primary-100 md:border-r-primary-100 border-l md:border-r justify-center">
+              <div className="w-[110px] h-[110px] bg-black flex justify-center items-center">
+                <img
+                  src="./brainstorming.png"
+                  className="w-[62px] h-[62px]"
+                  alt=""
+                />
+              </div>
+              <p className="font-bold text-center text-2xl">420</p>
+              <p className="text-sm font-bold text-center">
+                CONSULTANT SOLUTIONS
+              </p>
+            </div>
+            <div className="text-white flex flex-col items-center space-y-2 w-full  border-r-primary-100 border-r justify-center">
+              <div className="w-[110px] h-[110px] bg-black flex justify-center items-center">
+                <img
+                  src="./brainstorming.png"
+                  className="w-[62px] h-[62px]"
+                  alt=""
+                />
+              </div>
+              <p className="font-bold text-center text-2xl">420</p>
+              <p className="text-sm font-bold text-center">
+                CONSULTANT SOLUTIONS
+              </p>
+            </div>
+            <div className="text-white flex flex-col items-center space-y-2 w-full  justify-center">
+              <div className="w-[110px] h-[110px] bg-black flex justify-center items-center">
+                <img
+                  src="./brainstorming.png"
+                  className="w-[62px] h-[62px]"
+                  alt=""
+                />
+              </div>
+              <p className="font-bold text-center text-2xl">420</p>
+              <p className="text-sm font-bold text-center">
+                CONSULTANT SOLUTIONS
+              </p>
+            </div>
+          </div>
+        </DefaultWidth>
+      </section>
+      <section className="h-[90vh]">
+        <div className="flex md:flex-row flex-col justify-center gap-2 -translate-y-[15.625rem] md:-translate-y-[4.5rem]">
+          <div className="w-[450px] h-[150px] bg-white"></div>
+          <div className="w-[450px] h-[150px] bg-[#F2F4F8]"></div>
+          <div className="w-[450px] h-[150px] bg-[#F2F4F8]"></div>
+        </div>
       </section>
     </>
   );
@@ -248,6 +231,90 @@ const FaqList = [
       "We cover all the essential smart money topics – spending, saving, everyday commerce, entrepreneurship and much more!",
   },
 ];
+
+const Faq = () => {
+  return (
+    <section className="flex flex-col justify-center items-center my-[6.25rem]">
+      <div className="flex flex-col items-center justify-center">
+        <h1 className="text-[2.8125rem] leading-[3.375rem] text-text-100 font-bold text-center">
+          FAQ
+        </h1>
+        <p className="text-[0.9375rem] leading-[0.9375rem] font-roboto font-light text-center mt-1">
+          Frequently asked questions
+        </p>
+      </div>
+
+      <div className="flex md:flex-row flex-col justify-center md:mt-5 items-center md:items-end gap-16 md:h-[70vh]">
+        <Accordion
+          type="single"
+          collapsible
+          className="md:w-[586px] w-[350px] mx-auto"
+        >
+          {FaqList.map((item, index) => (
+            <AccordionItem
+              key={index}
+              value={`item-${index + 2}`}
+              className="data-[state=open]:rounded data-[state=closed]:bg-[#F2F4F8] my-5 data-[state=open]:shadow-lg data-[state=open]:border"
+            >
+              <AccordionTrigger className="hover:no-underline text-[1rem] text-text-200 leading-[1.25rem] p-8 font-[900]">
+                <p>
+                  <span className="text-primary-t200 pr-5">0{index + 1}</span>
+                  {item.title}
+                </p>
+              </AccordionTrigger>
+              <AccordionContent className="text-base leading-6 font-roboto p-5 text-text-200">
+                {item.content}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+
+        <div>
+          <div className="h-full flex flex-col justify-end pb-4 md:pl-8">
+            <p className="flex gap-4">
+              <span className="">
+                <Check className="text-primary-t200" />
+              </span>{" "}
+              Lorem ipsum dolor sit amet.
+            </p>
+            <p className="flex gap-4">
+              <span className="">
+                <Check className="text-primary-t200" />
+              </span>{" "}
+              Lorem ipsum dolor sit amet. Lorem.
+            </p>
+            <p className="flex gap-4">
+              <span className="">
+                <Check className="text-primary-t200" />
+              </span>{" "}
+              Lorem ipsum dolor sit amet. Lorem, ipsum.
+            </p>
+            <p className="flex gap-4">
+              <span className="">
+                <Check className="text-primary-t200" />
+              </span>{" "}
+              Lorem ipsum dolor sit amet. Lorem, ipsum.
+            </p>
+            <p className="flex gap-4">
+              <span className="">
+                <Check className="text-primary-t200" />
+              </span>{" "}
+              Lorem ipsum dolor sit amet. Lorem ipsum.
+            </p>
+          </div>
+        </div>
+        <div className="bg-primary-t200 w-[150px] h-[130px] flex justify-center items-center">
+          <div className="text-white">
+            <p className="text-4xl font-bold text-center">30</p>
+            <p className="w-[5.625rem] text-center text-base font-semibold">
+              Years of Experience
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 const Testimony = () => {
   return (
