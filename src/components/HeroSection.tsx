@@ -1,5 +1,4 @@
 import DefaultWidth from "./tools/DefaultWidth";
-import HeroImage from "../assets/images/HeroImage.png";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -27,7 +26,7 @@ const HeroSection = () => {
               </div>
             </div>
             <div className="mt-5 overflow-hidden shrink-0">
-              <img src={HeroImage} className="w-[43.75rem]" alt="" />
+              <img src='./HeroImage.png' className="w-[43.75rem]" alt="" />
             </div>
             <div className="md:hidden w-full flex justify-center">
               <div className="mt-8 py-2 px-3 rounded  bg-primary-t200 hover:scale-110 duration-300 cursor-pointer w-fit">
