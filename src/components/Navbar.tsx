@@ -8,22 +8,22 @@ const Navbar = () => {
   return (
     <nav
       className={cn(
-        "md:min-h-[5rem] md:h-fit h-[5rem] overflow-hidden w-full bg-primary-100 border-b duration-300 border-white fixed top-0 z-10",
+        "lg:min-h-[5rem] lg:h-fit h-[5rem] overflow-hidden w-full bg-primary-100 border-b duration-300 border-white fixed top-0 z-10",
         {
           "h-[55vh]": click,
         },
       )}
     >
       <div className="flex justify-between items-center">
-        <div className="flex items-center w-full md:w-fit">
-          <div className="md:border-r md:px-8 py-2 border-white w-fit">
+        <div className="flex items-center w-full lg:w-fit">
+          <div className="lg:border-r lg:px-8 py-2 border-white w-fit">
             <img
               src="./Endeavor.png"
               alt="logo"
               className="w-[80px] object-contain"
             />
           </div>
-          <div className="md:hidden flex justify-end items-center gap-2 w-full">
+          <div className="lg:hidden flex justify-end items-center gap-2 w-full">
             <div>
               <img
                 src="./search.png"
@@ -58,10 +58,10 @@ const Navbar = () => {
             </div>
           </div>
           <div>
-            <ul className="md:flex hidden pl-20 font-jost text-white font-semibold text-lg">
+            <ul className="lg:flex hidden pl-20 font-jost text-white font-semibold text-lg">
               {navLink.map((link) => (
                 <li
-                  className="px-3 cursor-pointer text-base flex gap-1"
+                  className="px-3 cursor-pointer text-xs xl:text-base flex gap-1"
                   key={link}
                 >
                   {link.toUpperCase()}{" "}
@@ -75,10 +75,10 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        <div className="md:flex hidden gap-2">
-          <ul className="flex items-center pr-16">
+        <div className="lg:flex hidden gap-2">
+          <ul className="flex items-center  pr-1 xl:pr-16">
             {socials.map((social) => (
-              <li className="px-2 w-10 cursor-pointer" key={social}>
+              <li className="px-2 w-6 xl:w-10 cursor-pointer" key={social}>
                 <img src={social} alt={social} />
               </li>
             ))}
@@ -93,7 +93,7 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={cn("md:hidden pl-2 mt-5 duration-500", {
+        className={cn("lg:hidden pl-2 mt-5 duration-500", {
           "translate-x-5": click,
           "translate-x-0": !click,
         })}

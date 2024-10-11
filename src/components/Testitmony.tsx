@@ -11,12 +11,12 @@ import DefaultWidth from "./tools/DefaultWidth";
 const Testimony = () => {
   return (
     <DefaultWidth className="">
-      <div className="flex md:flex-row flex-col items-center justify-between">
+      <div className="flex lg:flex-row flex-col items-center justify-between">
         <div className="space-y-8">
-          <p className="text-4xl text-center md:text-left md:text-5xl font-bold max-w-[451px] ">
+          <p className="text-4xl text-center lg:text-left lg:text-5xl font-bold max-w-[451px] ">
             WHAT THEY ARE TALKING ABOUT?
           </p>
-          <p className="text-center md:text-left text-sm text-primary-100">
+          <p className="text-center lg:text-left text-sm text-primary-100">
             Trusted by more than 4,200 customers
           </p>
         </div>
@@ -26,16 +26,16 @@ const Testimony = () => {
               align: "start",
               loop: true,
             }}
-            className="w-full max-w-[330px] md:max-w-[765px] mt-8 md:mt-0"
+            className="w-full max-w-[330px] lg:max-w-[765px] mt-8 lg:mt-0"
           >
             <CarouselContent>
               {Array.from({ length: 5 }).map((_, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 ">
+                <CarouselItem key={index} className="lg:basis-1/2 ">
                   <div className="">
                     <Card className="border-none rounded bg-white shadow-xl">
                       <CardContent className="flex flex-col items-center bg-white .justify-center p-8 rounded">
                         <div className="">
-                          <p className="text-primary-100 text-sm p-2 px-5 leading-5 font-semibold w-[300px] md:w-[380px]">
+                          <p className="text-primary-100 text-sm p-2 px-5 leading-5 font-semibold w-[300px] lg:w-[380px]">
                             Lorem ipsum is simply free text dolor sit amet,
                             consectetur notted adipisicing elit sed do eiusmod
                             tempor incididunt ut labore et dolore magna
@@ -56,8 +56,8 @@ const Testimony = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="translate-y-40 md:translate-y-32 translate-x-10 md:-translate-x-[305px] h-10 w-10 items-center" />
-            <CarouselNext className="translate-y-40 md:translate-y-32 translate-x-10 left-64 md:-translate-x-[305px] h-10 w-10 items-center md:left-0" />
+            <CarouselPrevious className="translate-y-40 lg:translate-y-32 translate-x-10 lg:-translate-x-[305px] h-10 w-10 items-center" />
+            <CarouselNext className="translate-y-40 lg:translate-y-32 translate-x-10 left-64 lg:-translate-x-[305px] h-10 w-10 items-center lg:left-0" />
           </Carousel>
         </div>
       </div>

@@ -18,11 +18,11 @@ const Faq = () => {
         </p>
       </div>
 
-      <div className="flex md:flex-row flex-col justify-center md:mt-5 items-center md:items-end gap-16 md:h-[70vh]">
+      <div className="flex lg:flex-row flex-col justify-center lg:mt-5 items-center lg:items-end gap-16 lg:h-[70vh]">
         <Accordion
           type="single"
           collapsible
-          className="md:w-[586px] w-[370px] mx-auto"
+          className="lg:w-[586px] w-[370px] mx-auto"
         >
           {FaqList.map((item, index) => (
             <AccordionItem
@@ -44,7 +44,7 @@ const Faq = () => {
         </Accordion>
 
         <div>
-          <div className="h-full flex flex-col justify-end pb-4 md:pl-8">
+          <div className="h-full flex flex-col justify-end pb-4 lg:pl-8">
             <p className="flex gap-4">
               <span className="">
                 <Check className="text-primary-t200" />
