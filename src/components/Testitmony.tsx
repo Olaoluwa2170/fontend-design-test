@@ -56,8 +56,8 @@ const Testimony = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="translate-y-40 xl:translate-y-32 -left-[500px]. h-10 w-10 items-center" />
-            <CarouselNext className="translate-y-40 xl:translate-y-32 -left-[435px]. h-10 w-10 items-center" />
+            <CarouselPrevious className="translate-y-40 xl:translate-y-32  h-10 w-10 items-center" />
+            <CarouselNext className="translate-y-40 xl:translate-y-32  h-10 w-10 items-center" />
           </Carousel>
         </div>
       </div>

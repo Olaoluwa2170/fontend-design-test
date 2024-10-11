@@ -36,7 +36,7 @@ const HeroSection = () => {
           </div>
         </DefaultWidth>
       </section>
-      <section className="bg-[#0F0D1D] h-[85vh] lg:h-screen pt-[6.25rem]">
+      <section className="bg-[#0F0D1D] h-[90vh] md:h-[85vh] lg:h-screen pt-[6.25rem]">
         <DefaultWidth>
           <div>
             <h2 className="text-white text-3xl lg:text-5xl font-bold text-center">
@@ -63,7 +63,7 @@ const HeroSection = () => {
                         <Card className="border-none rounded bg-black">
                           <CardContent className="flex items-center bg-black justify-center p-8 rounded">
                             <div className="">
-                              <p className="text-white text-2xl p-2 leading-5 font-semibold w-[200px]">
+                              <p className="text-white text-2xl p-2 leading-5 font-semibold sm:w-[200px]">
                                 Wealth Management
                               </p>
                               <p className="text-xs font-semibold p-2 flex items-end h-[5rem] cursor-pointer text-[#8F8DA0]">

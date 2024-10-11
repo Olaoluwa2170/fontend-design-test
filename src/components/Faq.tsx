@@ -22,7 +22,7 @@ const Faq = () => {
         <Accordion
           type="single"
           collapsible
-          className="xl:w-[586px] w-[370px] mx-auto"
+          className="xl:w-[586px] w-[350px] sm:w-[370px] mx-auto"
         >
           {FaqList.map((item, index) => (
             <AccordionItem
