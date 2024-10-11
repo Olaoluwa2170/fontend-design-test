@@ -69,7 +69,7 @@ const Body = () => {
       </section>
       <section className="bg-[#F2F4F8] lg:h-[120vh] pb-[3.125rem] lg:pb-0 flex flex-col items-center">
         <div className="flex lg:flex-row flex-col -translate-y-[15.625rem] lg:-translate-y-[6.25rem]">
-          <div className="gap-8 w-[23rem] md:w-[28rem] xl:w-[39.125rem] shadow-2xl bg-white lg:p-0 p-10 lg:h-[222px] flex lg:flex-row flex-col items-center justify-center rounded">
+          <div className="gap-8 sm:w-[23rem] md:w-[28rem] xl:w-[39.125rem] shadow-2xl bg-white lg:p-0 p-10 lg:h-[222px] flex lg:flex-row flex-col items-center justify-center rounded">
             <div className="lg:w-[4.375rem] w-[50px] flex justify-center bg-[#EBF1FF] items-center lg:h-[4.375rem] h-[50px]">
               <p className="text-xl font-semibold text-primary-t200">01</p>
             </div>
@@ -84,7 +84,7 @@ const Body = () => {
             </div>
           </div>
 
-          <div className="gap-8 w-[23rem] md:w-[28rem] xl:w-[39.125rem] shadow-2xl lg:-translate-y-0 -translate-y-1  lg:-translate-x-3 bg-white lg:p-0 p-10 lg:h-[222px] flex lg:flex-row flex-col items-center justify-center rounded">
+          <div className="gap-8 sm:w-[23rem] md:w-[28rem] xl:w-[39.125rem] shadow-2xl lg:-translate-y-0 -translate-y-1  lg:-translate-x-3 bg-white lg:p-0 p-10 lg:h-[222px] flex lg:flex-row flex-col items-center justify-center rounded">
             <div className="lg:w-[4.375rem] w-[50px] flex justify-center bg-[#EBF1FF] items-center lg:h-[4.375rem] h-[50px]">
               <p className="text-xl font-semibold text-primary-t200">02</p>
             </div>

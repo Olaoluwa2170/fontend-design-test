@@ -63,7 +63,7 @@ const Footer = () => {
         <div className="space-y-20 xl:space-y-48">
           <p className="text-gray-50 sm:text-xl font-bold">NEWSLETTER</p>
           <div className="xl:w-[430px] md:w-[520px] w-[350px] lg:w-[520px] h-[205px] bg-[#06050C] gap-10 flex flex-col xl:pl-12 lg:p-5 p-3 justify-center">
-            <p className="text-lg text-primary-100 w-[352px] text-left">
+            <p className="text-lg text-primary-100 sm:w-[352px] text-left">
               Subscribe for latest articles and resources
             </p>
             <div className="xl:w-[354px] lg:w-[450px] flex justify-between p-2 items-center bg-white h-[65px]">
