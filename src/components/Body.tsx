@@ -199,9 +199,17 @@ const Body = () => {
       </section>
       <section className="h-[90vh]">
         <div className="flex md:flex-row flex-col justify-center gap-2 -translate-y-[15.625rem] md:-translate-y-[4.5rem]">
-          <div className="w-[450px] h-[150px] bg-white"></div>
-          <div className="w-[450px] h-[150px] bg-[#F2F4F8]"></div>
-          <div className="w-[450px] h-[150px] bg-[#F2F4F8]"></div>
+          <div className="w-[450px] h-[150px] flex items-center justify-center bg-white shadow-xl border"><p className="text-center text-primary-t200 text-xl font-bold">
+            BUSINESS GROWTH</p></div>
+          <div className="w-[450px] h-[150px] flex items-center justify-center bg-[#F2F4F8]"><p className="text-center text-xl font-bold">
+          BUSINESS GROWTH</p></div>
+          <div className="w-[450px] h-[150px] flex items-center justify-center bg-[#F2F4F8]"><p className="text-center text-xl font-bold">
+          BUSINESS GROWTH</p></div>
+        </div>
+        <div>
+          <div className="md:w-[4.375rem] w-[50px] flex justify-center bg-[#EBF1FF] items-center md:h-[4.375rem] h-[50px]">
+            <img src="./check-circle.png" alt="phone" className="w-6 h-6" />
+          </div>
         </div>
       </section>
     </>

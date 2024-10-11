@@ -17,7 +17,11 @@ const Navbar = () => {
       <div className="flex justify-between items-center">
         <div className="flex items-center w-full md:w-fit">
           <div className="md:border-r md:px-8 py-2 border-white w-fit">
-            <img src='./Endeavor.png' alt="logo" className="w-[80px] object-contain" />
+            <img
+              src="./Endeavor.png"
+              alt="logo"
+              className="w-[80px] object-contain"
+            />
           </div>
           <div className="md:hidden flex justify-end items-center gap-2 w-full">
             <div>
