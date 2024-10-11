@@ -214,7 +214,7 @@ const Body = () => {
 
         <DefaultWidth>
             <div>
-              <div className="flex items-center gap-6 mt-8">
+              <div className="flex items-center md:gap-6 gap-2 mt-8">
                 <div className="md:w-[4.375rem] w-[50px] flex justify-center bg-[#EBF1FF] items-center md:h-[4.375rem] h-[50px]">
                   <img src="./check-circle.png" alt="phone" className="w-6 h-6" />
                 </div>
@@ -222,7 +222,7 @@ const Body = () => {
                   <p className=" text-sm md:text-lg font-bold ">
                     HIGHEST SUCCESS RATES
                   </p>
-                  <p className="text-primary-100 text-xs md:text-sm w-[250px] leading-[26px]">
+                  <p className="text-primary-100 text-xs md:text-sm md:w-[250px] w-[200px] leading-[26px]">
                     Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit
                     amet. adipisicing elit. Sequi, impedit.
                   </p>
@@ -230,15 +230,15 @@ const Body = () => {
               </div>
             </div>
             <div>
-              <div className="flex items-center gap-6 mt-20">
-                <div className="md:w-[4.375rem] w-[50px] flex justify-center bg-[#EBF1FF] items-center md:h-[4.375rem] h-[50px]">
+              <div className="flex items-center md:gap-6 gap-2 mt-20">
+                <div className="md:w-[4.375rem] w-[60px] flex justify-center bg-[#EBF1FF] items-center md:h-[4.375rem] h-[60px]">
                   <img src="./check-circle.png" alt="phone" className="w-6 h-6" />
                 </div>
                 <div className="space-y-3">
                   <p className=" text-sm md:text-lg font-bold ">
                     HIGHEST SUCCESS RATES
                   </p>
-                  <p className="text-primary-100 text-xs md:text-sm w-[250px] leading-[26px]">
+                  <p className="text-primary-100 text-xs md:text-sm md:w-[250px] w-[200px] leading-[26px]">
                     Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit
                     amet. adipisicing elit. Sequi, impedit.
                   </p>
