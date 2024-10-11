@@ -43,19 +43,19 @@ const Footer = () => {
           <div className="flex gap-10">
             <div>
               <ul className="space-y-10 text-lg text-primary-100 font-bold">
-                <li>About</li>
-                <li>Meet our Team</li>
-                <li>Case Studies</li>
-                <li>Latest News</li>
-                <li>Contact</li>
+                <li className="cursor-pointer">About</li>
+                <li className="cursor-pointer">Meet our Team</li>
+                <li className="cursor-pointer">Case Studies</li>
+                <li className="cursor-pointer">Latest News</li>
+                <li className="cursor-pointer">Contact</li>
               </ul>
             </div>
             <div>
               <ul className="space-y-10 text-lg text-primary-100 font-bold">
-                <li>Support</li>
-                <li>Terms of Use</li>
-                <li>Privacy & Policy</li>
-                <li>Help</li>
+                <li className="cursor-pointer">Support</li>
+                <li className="cursor-pointer">Terms of Use</li>
+                <li className="cursor-pointer">Privacy & Policy</li>
+                <li className="cursor-pointer">Help</li>
               </ul>
             </div>
           </div>
