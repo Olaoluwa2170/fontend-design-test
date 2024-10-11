@@ -10,7 +10,7 @@ const Navbar = () => {
       className={cn(
         "lg:min-h-[5rem] lg:h-fit h-[5rem] overflow-hidden w-full bg-primary-100 border-b duration-300 border-white fixed top-0 z-10",
         {
-          "h-[55vh]": click,
+          "md:h-[40vh]  h-[60vh]": click,
         },
       )}
     >
