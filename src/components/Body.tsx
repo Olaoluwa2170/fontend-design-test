@@ -198,16 +198,16 @@ const Body = () => {
         </DefaultWidth>
       </section>
       <section className="h-[90vh]">
-        <div className="flex md:flex-row flex-col justify-center gap-2 -translate-y-[15.625rem] md:-translate-y-[4.5rem]">
-          <div className="w-[450px] h-[150px] flex items-center justify-center bg-white shadow-xl border">
+        <div className="flex md:flex-row flex-col justify-center items-center gap-2 -translate-y-[5.625rem] md:-translate-y-[4.5rem]">
+          <div className="md:w-[450px] w-[250px] h-[150px] flex items-center justify-center bg-white shadow-xl border">
             <p className="text-center text-primary-t200 text-xl font-bold">
               BUSINESS GROWTH
             </p>
           </div>
-          <div className="w-[450px] h-[150px] flex items-center justify-center bg-[#F2F4F8]">
+          <div className="md:w-[450px] w-[250px] h-[150px] flex items-center justify-center bg-[#F2F4F8]">
             <p className="text-center text-xl font-bold">BUSINESS GROWTH</p>
           </div>
-          <div className="w-[450px] h-[150px] flex items-center justify-center bg-[#F2F4F8]">
+          <div className="md:w-[450px] w-[250px] h-[150px] flex items-center justify-center bg-[#F2F4F8]">
             <p className="text-center text-xl font-bold">BUSINESS GROWTH</p>
           </div>
         </div>
