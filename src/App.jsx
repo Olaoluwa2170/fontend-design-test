@@ -1,4 +1,4 @@
-import { Navbar, HeroSection, Body } from "./components";
+import { Navbar, HeroSection, Body, Footer } from "./components";
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
       <div className="md:pt-[6rem]">
         <HeroSection />
         <Body />
+        <Footer />
       </div>
     </>
   );

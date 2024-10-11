@@ -199,18 +199,53 @@ const Body = () => {
       </section>
       <section className="h-[90vh]">
         <div className="flex md:flex-row flex-col justify-center gap-2 -translate-y-[15.625rem] md:-translate-y-[4.5rem]">
-          <div className="w-[450px] h-[150px] flex items-center justify-center bg-white shadow-xl border"><p className="text-center text-primary-t200 text-xl font-bold">
-            BUSINESS GROWTH</p></div>
-          <div className="w-[450px] h-[150px] flex items-center justify-center bg-[#F2F4F8]"><p className="text-center text-xl font-bold">
-          BUSINESS GROWTH</p></div>
-          <div className="w-[450px] h-[150px] flex items-center justify-center bg-[#F2F4F8]"><p className="text-center text-xl font-bold">
-          BUSINESS GROWTH</p></div>
-        </div>
-        <div>
-          <div className="md:w-[4.375rem] w-[50px] flex justify-center bg-[#EBF1FF] items-center md:h-[4.375rem] h-[50px]">
-            <img src="./check-circle.png" alt="phone" className="w-6 h-6" />
+          <div className="w-[450px] h-[150px] flex items-center justify-center bg-white shadow-xl border">
+            <p className="text-center text-primary-t200 text-xl font-bold">
+              BUSINESS GROWTH
+            </p>
+          </div>
+          <div className="w-[450px] h-[150px] flex items-center justify-center bg-[#F2F4F8]">
+            <p className="text-center text-xl font-bold">BUSINESS GROWTH</p>
+          </div>
+          <div className="w-[450px] h-[150px] flex items-center justify-center bg-[#F2F4F8]">
+            <p className="text-center text-xl font-bold">BUSINESS GROWTH</p>
           </div>
         </div>
+
+        <DefaultWidth>
+            <div>
+              <div className="flex items-center gap-6 mt-8">
+                <div className="md:w-[4.375rem] w-[50px] flex justify-center bg-[#EBF1FF] items-center md:h-[4.375rem] h-[50px]">
+                  <img src="./check-circle.png" alt="phone" className="w-6 h-6" />
+                </div>
+                <div className="space-y-3">
+                  <p className=" text-sm md:text-lg font-bold ">
+                    HIGHEST SUCCESS RATES
+                  </p>
+                  <p className="text-primary-100 text-xs md:text-sm w-[250px] leading-[26px]">
+                    Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit
+                    amet. adipisicing elit. Sequi, impedit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className="flex items-center gap-6 mt-20">
+                <div className="md:w-[4.375rem] w-[50px] flex justify-center bg-[#EBF1FF] items-center md:h-[4.375rem] h-[50px]">
+                  <img src="./check-circle.png" alt="phone" className="w-6 h-6" />
+                </div>
+                <div className="space-y-3">
+                  <p className=" text-sm md:text-lg font-bold ">
+                    HIGHEST SUCCESS RATES
+                  </p>
+                  <p className="text-primary-100 text-xs md:text-sm w-[250px] leading-[26px]">
+                    Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit
+                    amet. adipisicing elit. Sequi, impedit.
+                  </p>
+                </div>
+              </div>
+            </div>
+        </DefaultWidth>
       </section>
     </>
   );
