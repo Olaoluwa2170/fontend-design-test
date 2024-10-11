@@ -2,8 +2,8 @@ import DefaultWidth from "./tools/DefaultWidth";
 
 const Footer = () => {
   return (
-    <section className="h-screen bg-[#0F0D1D] py-[6.25rem]">
-      <DefaultWidth className="flex items-start justify-center max-w-[90vw] gap-10">
+    <section className="md:h-screen bg-[#0F0D1D] py-[6.25rem]">
+      <DefaultWidth className="flex md:flex-row flex-col items-start justify-center max-w-[90vw] gap-32 md:gap-10">
         <div className="space-y-10">
           <img
             src="./Endeavor.png"
@@ -18,15 +18,20 @@ const Footer = () => {
             <div className="h-[1px] bg-primary-100 w-[467px]">
               <ul className="text-lg text-primary-100">
                 <li>
-                  <img src="" className="" alt="" />
+                  <img
+                    src="./phone-square-alt.png"
+                    className=" w-6 h-6"
+                    alt=""
+                  />
                   +92 666 888 0000
                 </li>
                 <li>
-                  <img src="" className="" alt="" />
+                  <img src="./email.png" className=" w-6 h-6" alt="" />
                   needhelp@company.com
                 </li>
                 <li>
-                  <img src="" className="" alt="" />
+                  {" "}
+                  <img src="./map-marker-alt.png" className=" w-6 h-6" alt="" />
                   66 Broklyn Street New York, USA
                 </li>
               </ul>
@@ -55,14 +60,16 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="space-y-20"> 
+        <div className="space-y-20">
           <p className="text-gray-50 text-xl font-bold">NEWSLETTER</p>
           <div className="w-[591px] h-[205px] bg-[#06050C] gap-10 flex flex-col pl-12 .items-center justify-center">
             <p className="text-lg text-primary-100 w-[352px] text-left">
               Subscribe for latest articles and resources
             </p>
             <div className="w-[454px] flex justify-around items-center bg-white h-[65px]">
-              <p className="text-sm text-primary-100 font-bold">Email address</p>
+              <p className="text-sm text-primary-100 font-bold">
+                Email address
+              </p>
               <div className="py-3 px-5 bg-[#3C72FC] text-white font-bold hover:scale-110 duration-300 cursor-pointer w-fit">
                 REGISTER
               </div>
