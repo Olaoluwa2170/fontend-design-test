@@ -2,7 +2,7 @@ import DefaultWidth from "./tools/DefaultWidth";
 
 const Footer = () => {
   return (
-    <section className="xl:h-screen bg-[#0F0D1D] py-[50px] px-6 sm:py-[6.25rem]">
+    <section className="bg-[#0F0D1D] py-[50px] px-6 sm:py-[6.25rem]">
       <DefaultWidth className="grid lg:grid-cols-2 xl:grid-cols-3 items-start justify-center sm:max-w-[90vw] gap-32 xl:gap-5">
         <div className="space-y-10">
           <img
@@ -16,7 +16,7 @@ const Footer = () => {
               cing elit simply text amet cing elit.
             </p>
             <div className="h-[1px] bg-primary-100 w-full xl:w-[367px]"></div>
-              <ul className="pt-20 sm:text-lg space-y-4 text-primary-100">
+              <ul className="pt-6 sm:text-lg space-y-4 text-primary-100">
                 <li className="flex gap-2 items-center">
                   <img
                     src="./phone-square-alt.png"
@@ -42,7 +42,7 @@ const Footer = () => {
           <p className="text-gray-50 sm:text-xl md:mt-0 sm:mt-32 font-bold">EXPLORE</p>
           <div className="flex gap-10">
             <div>
-              <ul className="space-y-10 xl:text-base text-primary-100 font-bold">
+              <ul className="space-y-5 xl:text-base text-primary-100 font-bold">
                 <li className="cursor-pointer">About</li>
                 <li className="cursor-pointer">Meet our Team</li>
                 <li className="cursor-pointer">Case Studies</li>
@@ -51,7 +51,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <ul className="space-y-10 xl:text-base text-primary-100 font-bold">
+              <ul className="space-y-5 xl:text-base text-primary-100 font-bold">
                 <li className="cursor-pointer">Support</li>
                 <li className="cursor-pointer">Terms of Use</li>
                 <li className="cursor-pointer">Privacy & Policy</li>
@@ -60,7 +60,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="space-y-20 xl:space-y-48">
+        <div className="space-y-10 xl:space-y-20">
           <p className="text-gray-50 sm:text-xl font-bold">NEWSLETTER</p>
           <div className="xl:w-[430px] md:w-[520px] w-[350px] lg:w-[520px] h-[205px] bg-[#06050C] gap-10 flex flex-col xl:pl-12 lg:p-5 p-3 justify-center">
             <p className="text-lg text-primary-100 sm:w-[352px] text-left">
