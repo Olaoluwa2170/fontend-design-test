@@ -325,13 +325,15 @@ const BusinessComponent: React.FC<{
 
       <div className="md:block space-y-32 hidden ">
         <p className="text-primary-100 text-lg">
-        There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form injected humour or randomised words which don't look believable.
+          There are many variations of passages of lorem ipsum available, but
+          the majority have suffered alteration in some form injected humour or
+          randomised words which don't look believable.
         </p>
         <ul className="list-disc text-primary-100">
-<li>Lorem ipsum dolor sit amet consectetur.</li>
-<li>Lorem ipsum dolor sit amet consectetur.</li>
-<li>Lorem ipsum dolor sit amet consectetur.</li>
-<li>Lorem ipsum dolor sit amet consectetur.</li>
+          <li>Lorem ipsum dolor sit amet consectetur.</li>
+          <li>Lorem ipsum dolor sit amet consectetur.</li>
+          <li>Lorem ipsum dolor sit amet consectetur.</li>
+          <li>Lorem ipsum dolor sit amet consectetur.</li>
         </ul>
       </div>
     </DefaultWidth>
