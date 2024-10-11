@@ -84,7 +84,7 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="border-r border-l min-h-[5.9375rem] mr-5 flex items-center px-8 border-white">
-            <img src="./search.png" alt="search" />
+            <img src="./search.png" alt="search" className="cursor-pointer" />
           </div>
           <div className="font-jost flex flex-col text-white justify-center pr-10">
             <p>Need help?</p>

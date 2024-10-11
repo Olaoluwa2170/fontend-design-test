@@ -1,22 +1,14 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { Progress } from "@/components/ui/progress";
+import Faq from "./Faq";
+import Testimony from "./Testitmony";
 import DefaultWidth from "./tools/DefaultWidth";
-import { Check } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import React, { useState } from "react";
+import { cn } from "@/lib/utils";
 
 const Body = () => {
+  const [first, setfirst] = useState(true);
+  const [second, setsecond] = useState(false);
+  const [third, setthird] = useState(false);
   return (
     <>
       <section className="overflow-hidden relative pb-[15rem] md:pb-[6.25rem]">
@@ -76,7 +68,7 @@ const Body = () => {
       </section>
       <section className="bg-[#F2F4F8] md:h-[120vh] pb-[3.125rem] md:pb-0 flex flex-col items-center">
         <div className="flex md:flex-row flex-col -translate-y-[15.625rem] md:-translate-y-[6.25rem]">
-          <div className="gap-8 w-[23rem] md:w-[39.125rem] shadow-2xl bg-white md:p-0 p-10 md:h-[222px] flex md:flex-row flex-col items-center justify-center">
+          <div className="gap-8 w-[23rem] md:w-[39.125rem] shadow-2xl bg-white md:p-0 p-10 md:h-[222px] flex md:flex-row flex-col items-center justify-center rounded">
             <div className="md:w-[4.375rem] w-[50px] flex justify-center bg-[#EBF1FF] items-center md:h-[4.375rem] h-[50px]">
               <p className="text-xl font-semibold text-primary-t200">01</p>
             </div>
@@ -91,7 +83,7 @@ const Body = () => {
             </div>
           </div>
 
-          <div className="gap-8 w-[23rem] md:w-[39.125rem] shadow-2xl md:-translate-y-0 -translate-y-1  md:-translate-x-3 bg-white md:p-0 p-10 md:h-[222px] flex md:flex-row flex-col items-center justify-center">
+          <div className="gap-8 w-[23rem] md:w-[39.125rem] shadow-2xl md:-translate-y-0 -translate-y-1  md:-translate-x-3 bg-white md:p-0 p-10 md:h-[222px] flex md:flex-row flex-col items-center justify-center rounded">
             <div className="md:w-[4.375rem] w-[50px] flex justify-center bg-[#EBF1FF] items-center md:h-[4.375rem] h-[50px]">
               <p className="text-xl font-semibold text-primary-t200">02</p>
             </div>
@@ -191,61 +183,102 @@ const Body = () => {
               </div>
               <p className="font-bold text-center text-2xl">420</p>
               <p className="text-sm font-bold text-center">
-                CONSULTANT SOLUTIONS
+                CUSTUMER SOLUTIONS
               </p>
             </div>
           </div>
         </DefaultWidth>
       </section>
-      <section className="h-[90vh]">
+      <section className="md:h-[90vh] pb-8">
         <div className="flex md:flex-row flex-col justify-center items-center gap-2 -translate-y-[5.625rem] md:-translate-y-[4.5rem]">
-          <div className="md:w-[450px] w-[250px] h-[150px] flex items-center justify-center bg-white shadow-xl border">
-            <p className="text-center text-primary-t200 text-xl font-bold">
+          <div
+            onClick={() => {
+              setfirst(true);
+              setsecond(false);
+              setthird(false);
+            }}
+            className={cn(
+              "md:w-[450px] w-[260px] rounded cursor-pointer h-[50px] md:h-[150px] flex items-center justify-center bg-white shadow-xl border",
+              {
+                "bg-[#F2F4F8]": !first,
+              },
+            )}
+          >
+            <p
+              className={cn("text-center text-xl font-bold", {
+                "text-primary-t200": first,
+              })}
+            >
               BUSINESS GROWTH
             </p>
           </div>
-          <div className="md:w-[450px] w-[250px] h-[150px] flex items-center justify-center bg-[#F2F4F8]">
-            <p className="text-center text-xl font-bold">BUSINESS GROWTH</p>
+          <div
+            onClick={() => {
+              setfirst(false);
+              setsecond(true);
+              setthird(false);
+            }}
+            className={cn(
+              "md:w-[450px] w-[260px] rounded cursor-pointer h-[50px] md:h-[150px] flex items-center justify-center bg-white shadow-xl border",
+              {
+                "bg-[#F2F4F8]": !second,
+              },
+            )}
+          >
+            <p
+              className={cn("text-center text-xl font-bold", {
+                "text-primary-t200": second,
+              })}
+            >
+              BUSINESS RESONANCE
+            </p>
           </div>
-          <div className="md:w-[450px] w-[250px] h-[150px] flex items-center justify-center bg-[#F2F4F8]">
-            <p className="text-center text-xl font-bold">BUSINESS GROWTH</p>
+          <div
+            onClick={() => {
+              setfirst(false);
+              setsecond(false);
+              setthird(true);
+            }}
+            className={cn(
+              "md:w-[450px] w-[260px] rounded cursor-pointer h-[50px] md:h-[150px] flex items-center justify-center bg-white shadow-xl border",
+              {
+                "bg-[#F2F4F8]": !third,
+              },
+            )}
+          >
+            <p
+              className={cn("text-center text-xl font-bold", {
+                "text-primary-t200": third,
+              })}
+            >
+              CUSTOMER SATISFATION
+            </p>
           </div>
         </div>
 
-        <DefaultWidth>
-            <div>
-              <div className="flex items-center md:gap-6 gap-2 mt-8">
-                <div className="md:w-[4.375rem] w-[50px] flex justify-center bg-[#EBF1FF] items-center md:h-[4.375rem] h-[50px]">
-                  <img src="./check-circle.png" alt="phone" className="w-6 h-6" />
-                </div>
-                <div className="space-y-3">
-                  <p className=" text-sm md:text-lg font-bold ">
-                    HIGHEST SUCCESS RATES
-                  </p>
-                  <p className="text-primary-100 text-xs md:text-sm md:w-[250px] w-[200px] leading-[26px]">
-                    Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit
-                    amet. adipisicing elit. Sequi, impedit.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="flex items-center md:gap-6 gap-2 mt-20">
-                <div className="md:w-[4.375rem] w-[60px] flex justify-center bg-[#EBF1FF] items-center md:h-[4.375rem] h-[60px]">
-                  <img src="./check-circle.png" alt="phone" className="w-6 h-6" />
-                </div>
-                <div className="space-y-3">
-                  <p className=" text-sm md:text-lg font-bold ">
-                    HIGHEST SUCCESS RATES
-                  </p>
-                  <p className="text-primary-100 text-xs md:text-sm md:w-[250px] w-[200px] leading-[26px]">
-                    Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit
-                    amet. adipisicing elit. Sequi, impedit.
-                  </p>
-                </div>
-              </div>
-            </div>
-        </DefaultWidth>
+        <div className="relative overflow-hidden">
+          <BusinessComponent
+            text={{ h1: "HIGHEST SUCCESS RATES", h2: "HIGHEST SUCCESS RATES" }}
+            className={cn({
+              "translate-x-[500px] md:translate-x-[2000px] absolute": !first,
+            })}
+          />
+          <BusinessComponent
+            text={{ h1: "COORDINATED BUSINESS", h2: "COORDINATED BUSINESS" }}
+            className={cn("", {
+              "translate-x-[500px] md:translate-x-[2000px] absolute": !second,
+            })}
+          />
+          <BusinessComponent
+            text={{
+              h1: "GREAT CUSTOMER SERVICE",
+              h2: "GREAT CUSTOMER SERVICE",
+            }}
+            className={cn("", {
+              "translate-x-[500px] md:translate-x-[2000px] absolute": !third,
+            })}
+          />
+        </div>
       </section>
     </>
   );
@@ -253,164 +286,53 @@ const Body = () => {
 
 export default Body;
 
-const FaqList = [
-  {
-    title: "THINK AHEAD AND BOOST YOUR BUSINESS?",
-    content:
-      "There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable.",
-  },
-  {
-    title: " HOW CONSULTANCY EXPERTS WORK?",
-    content: "Yes, any time! Cancelling is easy from your account settings.",
-  },
-  {
-    title: "WHAT IS THE BEST ADVICE FOR GROWTH?",
-    content:
-      "Yes! Simply click Kids Play Now on any desktop or login to the MoneyPrep app.",
-  },
-  {
-    title: "HOW TO IMPROVE YOUR BUSINESS?",
-    content:
-      "We cover all the essential smart money topics – spending, saving, everyday commerce, entrepreneurship and much more!",
-  },
-];
-
-const Faq = () => {
+const BusinessComponent: React.FC<{
+  className?: string;
+  text: { h1: string; h2: string };
+}> = ({ className, text }) => {
   return (
-    <section className="flex flex-col justify-center items-center my-[6.25rem]">
-      <div className="flex flex-col items-center justify-center">
-        <h1 className="text-[2.8125rem] leading-[3.375rem] text-text-100 font-bold text-center">
-          FAQ
-        </h1>
-        <p className="text-[0.9375rem] leading-[0.9375rem] font-roboto font-light text-center mt-1">
-          Frequently asked questions
+    <DefaultWidth className={cn(className, "flex gap-20 items-end")}>
+      <div className="md:border-r border-r-primary-100 pr-5">
+        <div>
+          <div className="flex items-center md:gap-6 gap-2 mt-8">
+            <div className="md:w-[4.375rem] w-[50px] flex justify-center bg-[#EBF1FF] items-center md:h-[4.375rem] h-[50px]">
+              <img src="./check-circle.png" alt="phone" className="w-6 h-6" />
+            </div>
+            <div className="space-y-3">
+              <p className=" text-sm md:text-lg font-bold ">{text.h1}</p>
+              <p className="text-primary-100 text-xs md:text-sm md:w-[250px] w-[200px] leading-[26px]">
+                Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit
+                amet. adipisicing elit. Sequi, impedit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="flex items-center md:gap-6 gap-2 mt-20">
+            <div className="md:w-[4.375rem] w-[60px] flex justify-center bg-[#EBF1FF] items-center md:h-[4.375rem] h-[60px]">
+              <img src="./check-circle.png" alt="phone" className="w-6 h-6" />
+            </div>
+            <div className="space-y-3">
+              <p className=" text-sm md:text-lg font-bold ">{text.h2}</p>
+              <p className="text-primary-100 text-xs md:text-sm md:w-[250px] w-[200px] leading-[26px]">
+                Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit
+                amet. adipisicing elit. Sequi, impedit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="md:block space-y-32 hidden ">
+        <p className="text-primary-100 text-lg">
+        There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form injected humour or randomised words which don't look believable.
         </p>
-      </div>
-
-      <div className="flex md:flex-row flex-col justify-center md:mt-5 items-center md:items-end gap-16 md:h-[70vh]">
-        <Accordion
-          type="single"
-          collapsible
-          className="md:w-[586px] w-[350px] mx-auto"
-        >
-          {FaqList.map((item, index) => (
-            <AccordionItem
-              key={index}
-              value={`item-${index + 2}`}
-              className="data-[state=open]:rounded data-[state=closed]:bg-[#F2F4F8] my-5 data-[state=open]:shadow-lg data-[state=open]:border"
-            >
-              <AccordionTrigger className="hover:no-underline text-[1rem] text-text-200 leading-[1.25rem] p-8 font-[900]">
-                <p>
-                  <span className="text-primary-t200 pr-5">0{index + 1}</span>
-                  {item.title}
-                </p>
-              </AccordionTrigger>
-              <AccordionContent className="text-base leading-6 font-roboto p-5 text-text-200">
-                {item.content}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
-
-        <div>
-          <div className="h-full flex flex-col justify-end pb-4 md:pl-8">
-            <p className="flex gap-4">
-              <span className="">
-                <Check className="text-primary-t200" />
-              </span>{" "}
-              Lorem ipsum dolor sit amet.
-            </p>
-            <p className="flex gap-4">
-              <span className="">
-                <Check className="text-primary-t200" />
-              </span>{" "}
-              Lorem ipsum dolor sit amet. Lorem.
-            </p>
-            <p className="flex gap-4">
-              <span className="">
-                <Check className="text-primary-t200" />
-              </span>{" "}
-              Lorem ipsum dolor sit amet. Lorem, ipsum.
-            </p>
-            <p className="flex gap-4">
-              <span className="">
-                <Check className="text-primary-t200" />
-              </span>{" "}
-              Lorem ipsum dolor sit amet. Lorem, ipsum.
-            </p>
-            <p className="flex gap-4">
-              <span className="">
-                <Check className="text-primary-t200" />
-              </span>{" "}
-              Lorem ipsum dolor sit amet. Lorem ipsum.
-            </p>
-          </div>
-        </div>
-        <div className="bg-primary-t200 w-[150px] h-[130px] flex justify-center items-center">
-          <div className="text-white">
-            <p className="text-4xl font-bold text-center">30</p>
-            <p className="w-[5.625rem] text-center text-base font-semibold">
-              Years of Experience
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-const Testimony = () => {
-  return (
-    <DefaultWidth className="">
-      <div className="flex md:flex-row flex-col items-center justify-between">
-        <div className="space-y-8">
-          <p className="text-4xl text-center md:text-left md:text-5xl font-bold max-w-[451px] ">
-            WHAT THEY ARE TALKING ABOUT?
-          </p>
-          <p className="text-center md:text-left text-sm text-primary-100">
-            Trusted by more than 4,200 customers
-          </p>
-        </div>
-        <div>
-          <Carousel
-            opts={{
-              align: "start",
-              loop: true,
-            }}
-            className="w-full max-w-[330px] md:max-w-[765px] mt-8 md:mt-0"
-          >
-            <CarouselContent>
-              {Array.from({ length: 5 }).map((_, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 ">
-                  <div className="">
-                    <Card className="border-none rounded bg-white shadow-xl">
-                      <CardContent className="flex flex-col items-center bg-white .justify-center p-8 rounded">
-                        <div className="">
-                          <p className="text-primary-100 text-sm p-2 px-5 leading-5 font-semibold w-[300px] md:w-[380px]">
-                            Lorem ipsum is simply free text dolor sit amet,
-                            consectetur notted adipisicing elit sed do eiusmod
-                            tempor incididunt ut labore et dolore magna
-                            aliqua.Lorem ipsum is simply free text dolor sit
-                            amet,consectetur notted adipisicing elit sed do
-                            eiusmod tempor
-                          </p>
-                          <p className="px-5 text-xs font-semibold p-2 flex items-end  mt-5 cursor-pointer text-primary-t200">
-                            Tugg Devs
-                          </p>
-                          <p className="px-5 text-xs font-semibold p-1 flex items-end cursor-pointer text-primary-100">
-                            customer
-                          </p>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious className="translate-y-40 md:translate-y-32 translate-x-10 md:-translate-x-[305px] h-10 w-10 items-center" />
-            <CarouselNext className="translate-y-40 md:translate-y-32 translate-x-10 left-64 md:-translate-x-[305px] h-10 w-10 items-center md:left-0" />
-          </Carousel>
-        </div>
+        <ul className="list-disc text-primary-100">
+<li>Lorem ipsum dolor sit amet consectetur.</li>
+<li>Lorem ipsum dolor sit amet consectetur.</li>
+<li>Lorem ipsum dolor sit amet consectetur.</li>
+<li>Lorem ipsum dolor sit amet consectetur.</li>
+        </ul>
       </div>
     </DefaultWidth>
   );
