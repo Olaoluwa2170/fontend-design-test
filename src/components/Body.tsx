@@ -107,19 +107,8 @@ const Body = () => {
             We help our clients renew their business
           </p>
           <div className="grid md:grid-cols-3 grid-cols-1 gap-5 mt-10">
-            <div className="w-[290px] bg-primary-100 flex items-end p-5 md:h-[25.625rem] h-[15.625rem]">
-              <div>
-              <img src="./automobile.png" className="pb-2" alt="" />
-                <p className="text-gray-50 text-xl font-bold">
-                  Thought leadership
-                </p>
-                <p className="text-gray-50 text-lg font-bold ">
-                  businesses growth
-                </p>
-              </div>
-            </div>
-            <div className="w-[290px] bg-primary-100 flex items-end p-5 md:h-[25.625rem] h-[15.625rem]">
-              <div>
+          <div className="w-[290px] bg-primary-100 flex items-end md:h-[25.625rem] h-[15.625rem]">
+              <div className="hover:bg-primary-t200 duration-500 cursor-pointer p-5">
                 <img src="./automobile.png" className="pb-2" alt="" />
                 <p className="text-gray-50 text-xl font-bold">
                   Thought leadership
@@ -129,10 +118,21 @@ const Body = () => {
                 </p>
               </div>
             </div>
-            <div className="w-[290px] bg-primary-100 flex items-end p-5 md:h-[25.625rem] h-[15.625rem]">
-              <div>
-              <img src="./automobile.png" className="pb-2" alt="" />
-              <p className="text-gray-50 text-xl font-bold">
+            <div className="w-[290px] bg-primary-100 flex items-end md:h-[25.625rem] h-[15.625rem]">
+              <div className="hover:bg-primary-t200 duration-500 cursor-pointer p-5">
+                <img src="./automobile.png" className="pb-2" alt="" />
+                <p className="text-gray-50 text-xl font-bold">
+                  Thought leadership
+                </p>
+                <p className="text-gray-50 text-lg font-bold ">
+                  businesses growth
+                </p>
+              </div>
+            </div>
+            <div className="w-[290px] bg-primary-100 flex items-end md:h-[25.625rem] h-[15.625rem]">
+              <div className="hover:bg-primary-t200 duration-500 cursor-pointer p-5">
+                <img src="./automobile.png" className="pb-2" alt="" />
+                <p className="text-gray-50 text-xl font-bold">
                   Thought leadership
                 </p>
                 <p className="text-gray-50 text-lg font-bold ">
