@@ -15,9 +15,9 @@ const Footer = () => {
               Welcome to our consultancy agency. Lore ipsum simply text amet
               cing elit simply text amet cing elit.
             </p>
-            <div className="h-[1px] bg-primary-100 w-[467px]">
-              <ul className="text-lg text-primary-100">
-                <li>
+            <div className="h-[1px] bg-primary-100 w-full md:w-[467px]">
+              <ul className="pt-20 text-lg space-y-4 text-primary-100">
+                <li className="flex gap-2">
                   <img
                     src="./phone-square-alt.png"
                     className=" w-6 h-6"
@@ -25,11 +25,11 @@ const Footer = () => {
                   />
                   +92 666 888 0000
                 </li>
-                <li>
+                <li className="flex gap-2">
                   <img src="./email.png" className=" w-6 h-6" alt="" />
                   needhelp@company.com
                 </li>
-                <li>
+                <li className="flex gap-2">
                   {" "}
                   <img src="./map-marker-alt.png" className=" w-6 h-6" alt="" />
                   66 Broklyn Street New York, USA
@@ -38,7 +38,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="space-y-20">
+        <div className="space-y-20 mt-32 md:mt-0">
           <p className="text-gray-50 text-xl font-bold">EXPLORE</p>
           <div className="flex gap-10">
             <div>
@@ -62,11 +62,11 @@ const Footer = () => {
         </div>
         <div className="space-y-20">
           <p className="text-gray-50 text-xl font-bold">NEWSLETTER</p>
-          <div className="w-[591px] h-[205px] bg-[#06050C] gap-10 flex flex-col pl-12 .items-center justify-center">
+          <div className="md:w-[591px] h-[205px] bg-[#06050C] gap-10 flex flex-col md:pl-12 p-3 justify-center">
             <p className="text-lg text-primary-100 w-[352px] text-left">
               Subscribe for latest articles and resources
             </p>
-            <div className="w-[454px] flex justify-around items-center bg-white h-[65px]">
+            <div className="md:w-[454px] flex justify-around items-center bg-white h-[65px]">
               <p className="text-sm text-primary-100 font-bold">
                 Email address
               </p>
