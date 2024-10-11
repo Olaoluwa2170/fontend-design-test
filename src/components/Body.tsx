@@ -9,7 +9,7 @@ const Body = () => {
   const [first, setfirst] = useState(true);
   const [second, setsecond] = useState(false);
   const [third, setthird] = useState(false);
-  
+
   return (
     <>
       <section className="overflow-hidden relative pb-[15rem] md:pb-[6.25rem]">
@@ -119,14 +119,22 @@ const Body = () => {
             </div>
             <div className="w-[290px] bg-gray-50 flex items-end p-5 md:h-[25.625rem] h-[15.625rem]">
               <div>
-                <p>Thought leadership</p>
-                <p>businesses growth</p>
+                <p className="text-primary-100 text-xl font-bold">
+                  Thought leadership
+                </p>
+                <p className="text-primary-100 text-lg font-bold">
+                  businesses growth
+                </p>
               </div>
             </div>
             <div className="w-[290px] bg-gray-50 flex items-end p-5 md:h-[25.625rem] h-[15.625rem]">
               <div>
-                <p>Thought leadership</p>
-                <p>businesses growth</p>
+              <p className="text-primary-100 text-xl font-bold">
+                  Thought leadership
+                </p>
+                <p className="text-primary-100 text-lg font-bold">
+                  businesses growth
+                </p>
               </div>
             </div>
           </div>

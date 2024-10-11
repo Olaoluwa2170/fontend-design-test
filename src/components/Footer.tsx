@@ -17,21 +17,21 @@ const Footer = () => {
             </p>
             <div className="h-[1px] bg-primary-100 w-full md:w-[467px]">
               <ul className="pt-20 text-lg space-y-4 text-primary-100">
-                <li className="flex gap-2">
+                <li className="flex gap-2 items-center">
                   <img
                     src="./phone-square-alt.png"
-                    className=" w-6 h-6"
+                    className=" w-4 h-4"
                     alt=""
                   />
                   +92 666 888 0000
                 </li>
-                <li className="flex gap-2">
-                  <img src="./email.png" className=" w-6 h-6" alt="" />
+                <li className="flex gap-2 items-center">
+                  <img src="./email.png" className=" w-4 h-4" alt="" />
                   needhelp@company.com
                 </li>
-                <li className="flex gap-2">
+                <li className="flex gap-2 items-center">
                   {" "}
-                  <img src="./map-marker-alt.png" className=" w-6 h-6" alt="" />
+                  <img src="./map-marker-alt.png" className=" w-4 h-4" alt="" />
                   66 Broklyn Street New York, USA
                 </li>
               </ul>
@@ -60,7 +60,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="space-y-20">
+        <div className="space-y-20 md:space-y-48">
           <p className="text-gray-50 text-xl font-bold">NEWSLETTER</p>
           <div className="md:w-[591px] h-[205px] bg-[#06050C] gap-10 flex flex-col md:pl-12 p-3 justify-center">
             <p className="text-lg text-primary-100 w-[352px] text-left">
