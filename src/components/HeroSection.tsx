@@ -36,7 +36,7 @@ const HeroSection = () => {
           </div>
         </DefaultWidth>
       </section>
-      <section className="bg-[#0F0D1D] h-[80vh] lg:h-screen pt-[6.25rem]">
+      <section className="bg-[#0F0D1D] h-[85vh] lg:h-screen pt-[6.25rem]">
         <DefaultWidth>
           <div>
             <h2 className="text-white text-3xl lg:text-5xl font-bold text-center">

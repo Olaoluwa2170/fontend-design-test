@@ -28,25 +28,25 @@ const Body = () => {
                 We’re leading in the market
               </p>
               <p className="max-w-[34.125rem] space-y-7 mt-5 xl:mt-10">
-                <span className="lg:text-lg text-sm leading-[1.5rem] font-light text-primary-100">
+                <span className="xl:text-lg text-sm leading-[1.5rem] font-light text-primary-100">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Architecto eius quisquam expedita fugiat inventore! Ducimus
                   reiciendis itaque aperiam minus! Dolorem?
                 </span>
-                <span className="text-primary-t200 text-lg lg:text-2xl block">
+                <span className="text-primary-t200 text-lg xl:text-2xl block">
                   We have 35+ years of experience. We offer marketing and
                   consulting services
                 </span>
               </p>
               <div className="relative mt-8">
                 <Progress value={88} />
-                <p className="lg:text-[0.875rem] text-xs absolute top-2 lg:top-3 leading-[1.25rem] font-bold">
+                <p className="xl:text-[0.875rem] text-xs absolute top-2 lg:top-3 leading-[1.25rem] font-bold">
                   CONSULTING
                 </p>
               </div>
               <div className="relative mt-8">
                 <Progress value={68} />
-                <p className="text-xs lg:text-[0.875rem] absolute top-2 lg:top-3 leading-[1.25rem] font-bold">
+                <p className="text-xs xl:text-[0.875rem] absolute top-2 lg:top-3 leading-[1.25rem] font-bold">
                   ADVICES
                 </p>
               </div>
@@ -224,7 +224,7 @@ const Body = () => {
               setthird(false);
             }}
             className={cn(
-              "xl:w-[450px] w-[260px] rounded cursor-pointer h-[50px] lg:h-[150px] flex items-center justify-center bg-white shadow-xl border",
+              "xl:w-[400px] w-[260px] rounded cursor-pointer h-[50px] lg:h-[150px] flex items-center justify-center bg-white shadow-xl border",
               {
                 "bg-[#F2F4F8]": !first,
               },
@@ -245,7 +245,7 @@ const Body = () => {
               setthird(false);
             }}
             className={cn(
-              "xl:w-[450px] w-[260px] rounded cursor-pointer h-[50px] lg:h-[150px] flex items-center justify-center bg-white shadow-xl border",
+              "xl:w-[400px] w-[260px] rounded cursor-pointer h-[50px] lg:h-[150px] flex items-center justify-center bg-white shadow-xl border",
               {
                 "bg-[#F2F4F8]": !second,
               },
@@ -266,7 +266,7 @@ const Body = () => {
               setthird(true);
             }}
             className={cn(
-              "xl:w-[450px] w-[260px] rounded cursor-pointer h-[50px] lg:h-[150px] flex items-center justify-center bg-white shadow-xl border",
+              "xl:w-[400px] w-[260px] rounded cursor-pointer h-[50px] lg:h-[150px] flex items-center justify-center bg-white shadow-xl border",
               {
                 "bg-[#F2F4F8]": !third,
               },
