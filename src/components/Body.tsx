@@ -19,15 +19,15 @@ const Body = () => {
           alt=""
         />
         <DefaultWidth className="max-w-[80vw] ">
-          <div className="flex lg:flex-row flex-col py-[100px] justify-between items-center">
+          <div className="flex lg:flex-row flex-col gap-8 xl:gap-0 py-[100px] justify-between items-center">
             <div>
               <img src="./market.png" alt="word" className="w-[600px]" />
             </div>
             <div>
-              <p className="max-w-[29.6875rem] font-bold text-4xl mt-10 lg:mt-0 lg:text-5xl text-primary-tdefault">
+              <p className="max-w-[29.6875rem] font-bold text-4xl mt-10 lg:mt-0 xl:text-5xl text-primary-tdefault">
                 We’re leading in the market
               </p>
-              <p className="max-w-[34.125rem] space-y-7 mt-5 lg:mt-10">
+              <p className="max-w-[34.125rem] space-y-7 mt-5 xl:mt-10">
                 <span className="lg:text-lg text-sm leading-[1.5rem] font-light text-primary-100">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Architecto eius quisquam expedita fugiat inventore! Ducimus
@@ -69,7 +69,7 @@ const Body = () => {
       </section>
       <section className="bg-[#F2F4F8] lg:h-[120vh] pb-[3.125rem] lg:pb-0 flex flex-col items-center">
         <div className="flex lg:flex-row flex-col -translate-y-[15.625rem] lg:-translate-y-[6.25rem]">
-          <div className="gap-8 w-[23rem] lg:w-[39.125rem] shadow-2xl bg-white lg:p-0 p-10 lg:h-[222px] flex lg:flex-row flex-col items-center justify-center rounded">
+          <div className="gap-8 w-[23rem] md:w-[28rem] xl:w-[39.125rem] shadow-2xl bg-white lg:p-0 p-10 lg:h-[222px] flex lg:flex-row flex-col items-center justify-center rounded">
             <div className="lg:w-[4.375rem] w-[50px] flex justify-center bg-[#EBF1FF] items-center lg:h-[4.375rem] h-[50px]">
               <p className="text-xl font-semibold text-primary-t200">01</p>
             </div>
@@ -84,7 +84,7 @@ const Body = () => {
             </div>
           </div>
 
-          <div className="gap-8 w-[23rem] lg:w-[39.125rem] shadow-2xl lg:-translate-y-0 -translate-y-1  lg:-translate-x-3 bg-white lg:p-0 p-10 lg:h-[222px] flex lg:flex-row flex-col items-center justify-center rounded">
+          <div className="gap-8 w-[23rem] md:w-[28rem] xl:w-[39.125rem] shadow-2xl lg:-translate-y-0 -translate-y-1  lg:-translate-x-3 bg-white lg:p-0 p-10 lg:h-[222px] flex lg:flex-row flex-col items-center justify-center rounded">
             <div className="lg:w-[4.375rem] w-[50px] flex justify-center bg-[#EBF1FF] items-center lg:h-[4.375rem] h-[50px]">
               <p className="text-xl font-semibold text-primary-t200">02</p>
             </div>
@@ -100,14 +100,14 @@ const Body = () => {
           </div>
         </div>
         <DefaultWidth className="lg:mt-5 -translate-y-32 lg:-translate-y-0">
-          <p className="text-4xl font-bold text-primary-tdefault text-center lg:text-5xl">
+          <p className="text-4xl font-bold text-primary-tdefault text-center xl:text-5xl">
             NEW CASE STUDIES
           </p>
           <p className="text-lg text-primary-100 text-center mt-2">
             We help our clients renew their business
           </p>
-          <div className="grid lg:grid-cols-3 place-items-center grid-cols-1 gap-5 mt-10">
-          <div className="w-[290px] bg-primary-100 flex items-end lg:h-[25.625rem] h-[15.625rem]">
+          <div className="grid lg:grid-cols-3 place-items-center grid-cols-1 md:gap-10 xl:gap-5 mt-10">
+          <div className="xl:w-[290px] bg-primary-100 flex items-end lg:h-[25.625rem] h-[15.625rem]">
               <div className="hover:bg-primary-t200 duration-500 cursor-pointer p-5">
                 <img src="./automobile.png" className="pb-2" alt="" />
                 <p className="text-gray-50 text-xl font-bold">
@@ -118,7 +118,7 @@ const Body = () => {
                 </p>
               </div>
             </div>
-            <div className="w-[290px] bg-primary-100 flex items-end lg:h-[25.625rem] h-[15.625rem]">
+            <div className="xl:w-[290px] bg-primary-t200 flex items-end lg:h-[25.625rem] h-[15.625rem]">
               <div className="hover:bg-primary-t200 duration-500 cursor-pointer p-5">
                 <img src="./automobile.png" className="pb-2" alt="" />
                 <p className="text-gray-50 text-xl font-bold">
@@ -129,7 +129,7 @@ const Body = () => {
                 </p>
               </div>
             </div>
-            <div className="w-[290px] bg-primary-100 flex items-end lg:h-[25.625rem] h-[15.625rem]">
+            <div className="xl:w-[290px] bg-primary-100 flex items-end lg:h-[25.625rem] h-[15.625rem]">
               <div className="hover:bg-primary-t200 duration-500 cursor-pointer p-5">
                 <img src="./automobile.png" className="pb-2" alt="" />
                 <p className="text-gray-50 text-xl font-bold">
@@ -224,7 +224,7 @@ const Body = () => {
               setthird(false);
             }}
             className={cn(
-              "lg:w-[450px] w-[260px] rounded cursor-pointer h-[50px] lg:h-[150px] flex items-center justify-center bg-white shadow-xl border",
+              "xl:w-[450px] w-[260px] rounded cursor-pointer h-[50px] lg:h-[150px] flex items-center justify-center bg-white shadow-xl border",
               {
                 "bg-[#F2F4F8]": !first,
               },
@@ -245,7 +245,7 @@ const Body = () => {
               setthird(false);
             }}
             className={cn(
-              "lg:w-[450px] w-[260px] rounded cursor-pointer h-[50px] lg:h-[150px] flex items-center justify-center bg-white shadow-xl border",
+              "xl:w-[450px] w-[260px] rounded cursor-pointer h-[50px] lg:h-[150px] flex items-center justify-center bg-white shadow-xl border",
               {
                 "bg-[#F2F4F8]": !second,
               },
@@ -266,7 +266,7 @@ const Body = () => {
               setthird(true);
             }}
             className={cn(
-              "lg:w-[450px] w-[260px] rounded cursor-pointer h-[50px] lg:h-[150px] flex items-center justify-center bg-white shadow-xl border",
+              "xl:w-[450px] w-[260px] rounded cursor-pointer h-[50px] lg:h-[150px] flex items-center justify-center bg-white shadow-xl border",
               {
                 "bg-[#F2F4F8]": !third,
               },
@@ -349,7 +349,7 @@ const BusinessComponent: React.FC<{
         </div>
       </div>
 
-      <div className="lg:block md:block space-y-32 hidden ">
+      <div className="lg:block md:block lg:space-y-10 xl:space-y-32 hidden ">
         <p className="text-primary-100 text-lg">
           There are many variations of passages of lorem ipsum available, but
           the majority have suffered alteration in some form injected humour or

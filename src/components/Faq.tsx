@@ -9,7 +9,7 @@ import { Check } from "lucide-react";
 const Faq = () => {
   return (
     <section className="flex flex-col justify-center items-center my-[6.25rem]">
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col xl:pb-0 lg:pb-20 items-center justify-center">
         <h1 className="text-[2.8125rem] leading-[3.375rem] text-text-100 font-bold text-center">
           FAQ
         </h1>
@@ -18,11 +18,11 @@ const Faq = () => {
         </p>
       </div>
 
-      <div className="flex lg:flex-row flex-col justify-center lg:mt-5 items-center lg:items-end gap-16 lg:h-[70vh]">
+      <div className="flex lg:flex-row flex-col justify-center xl:mt-5 lg:mt-20 items-center lg:items-end gap-16 lg:h-[70vh]">
         <Accordion
           type="single"
           collapsible
-          className="lg:w-[586px] w-[370px] mx-auto"
+          className="xl:w-[586px] w-[370px] mx-auto"
         >
           {FaqList.map((item, index) => (
             <AccordionItem

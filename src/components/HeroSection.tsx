@@ -13,12 +13,12 @@ const HeroSection = () => {
     <>
       <section className="lg:h-[90vh] lg:pb-0 pb-10 overflow-hidden bg-primary-100">
         <DefaultWidth>
-          <div className="flex lg:flex-row flex-col">
+          <div className="flex lg:flex-row flex-col xl:items-start items-center">
             <div className="flex flex-col items-center lg:items-start gap-6 pt-[120px] lg:pt-[9.375rem]">
               <p className="lg:p-3 p-1 lg:text-base  text-sm bg-[#434B4D] w-fit font-jost rounded-sm">
                 Welcome to our Firm
               </p>
-              <p className="font-jost font-bold w-[450px] lg:w-[37.5rem] shrink-0 text-4xl lg:text-left text-center lg:text-7xl text-white">
+              <p className="font-jost font-bold w-[450px] xl:w-[37.5rem] shrink-0 text-4xl lg:text-left text-center md:text-5xl xl:text-7xl text-white">
                 Consulting For Every Business
               </p>
               <div className="mt-10 lg:block hidden py-3 px-5 bg-primary-t200 hover:scale-110 duration-300 cursor-pointer w-fit">
@@ -26,7 +26,7 @@ const HeroSection = () => {
               </div>
             </div>
             <div className="mt-5 overflow-hidden shrink-0">
-              <img src="./HeroImage.png" className="w-[43.75rem]" alt="" />
+              <img src="./HeroImage.png" className="xl:w-[43.75rem]" alt="" />
             </div>
             <div className="lg:hidden w-full flex justify-center">
               <div className="mt-8 py-2 px-3 rounded  bg-primary-t200 hover:scale-110 duration-300 cursor-pointer w-fit">

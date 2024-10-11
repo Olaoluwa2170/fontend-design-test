@@ -61,7 +61,7 @@ const Navbar = () => {
             <ul className="lg:flex hidden pl-20 font-jost text-white font-semibold text-lg">
               {navLink.map((link) => (
                 <li
-                  className="px-3 cursor-pointer text-xs xl:text-base flex gap-1"
+                  className="px-3 cursor-pointer text-xs xl:text-sm flex gap-1"
                   key={link}
                 >
                   {link.toUpperCase()}{" "}
@@ -78,7 +78,7 @@ const Navbar = () => {
         <div className="lg:flex hidden gap-2">
           <ul className="flex items-center  pr-1 xl:pr-16">
             {socials.map((social) => (
-              <li className="px-2 w-6 xl:w-10 cursor-pointer" key={social}>
+              <li className="px-2 w-8 xl:w-10 cursor-pointer" key={social}>
                 <img src={social} alt={social} />
               </li>
             ))}
@@ -87,8 +87,8 @@ const Navbar = () => {
             <img src="./search.png" alt="search" className="cursor-pointer" />
           </div>
           <div className="font-jost flex flex-col text-white justify-center pr-10">
-            <p>Need help?</p>
-            <p className="font-semibold">+234 8004023</p>
+            <p className="xl:text-base text-sm">Need help?</p>
+            <p className="xl:font-semibold">+234 8004023</p>
           </div>
         </div>
       </div>
