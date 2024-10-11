@@ -107,32 +107,35 @@ const Body = () => {
             We help our clients renew their business
           </p>
           <div className="grid md:grid-cols-3 grid-cols-1 gap-5 mt-10">
-            <div className="w-[290px] bg-gray-50 flex items-end p-5 md:h-[25.625rem] h-[15.625rem]">
+            <div className="w-[290px] bg-primary-100 flex items-end p-5 md:h-[25.625rem] h-[15.625rem]">
               <div>
-                <p className="text-primary-100 text-xl font-bold">
+              <img src="./automobile.png" className="pb-2" alt="" />
+                <p className="text-gray-50 text-xl font-bold">
                   Thought leadership
                 </p>
-                <p className="text-primary-100 text-lg font-bold">
+                <p className="text-gray-50 text-lg font-bold ">
                   businesses growth
                 </p>
               </div>
             </div>
-            <div className="w-[290px] bg-gray-50 flex items-end p-5 md:h-[25.625rem] h-[15.625rem]">
+            <div className="w-[290px] bg-primary-100 flex items-end p-5 md:h-[25.625rem] h-[15.625rem]">
               <div>
-                <p className="text-primary-100 text-xl font-bold">
+                <img src="./automobile.png" className="pb-2" alt="" />
+                <p className="text-gray-50 text-xl font-bold">
                   Thought leadership
                 </p>
-                <p className="text-primary-100 text-lg font-bold">
+                <p className="text-gray-50 text-lg font-bold ">
                   businesses growth
                 </p>
               </div>
             </div>
-            <div className="w-[290px] bg-gray-50 flex items-end p-5 md:h-[25.625rem] h-[15.625rem]">
+            <div className="w-[290px] bg-primary-100 flex items-end p-5 md:h-[25.625rem] h-[15.625rem]">
               <div>
-              <p className="text-primary-100 text-xl font-bold">
+              <img src="./automobile.png" className="pb-2" alt="" />
+              <p className="text-gray-50 text-xl font-bold">
                   Thought leadership
                 </p>
-                <p className="text-primary-100 text-lg font-bold">
+                <p className="text-gray-50 text-lg font-bold ">
                   businesses growth
                 </p>
               </div>
