@@ -3,7 +3,7 @@ import DefaultWidth from "./tools/DefaultWidth";
 const Footer = () => {
   return (
     <section className="xl:h-screen bg-[#0F0D1D] py-[6.25rem]">
-      <DefaultWidth className="grid grid-cols-2 xl:grid-cols-3 items-start justify-center max-w-[90vw] gap-32 xl:gap-10">
+      <DefaultWidth className="grid lg:grid-cols-2 xl:grid-cols-3 items-start justify-center max-w-[90vw] gap-32 xl:gap-5">
         <div className="space-y-10">
           <img
             src="./Endeavor.png"
@@ -15,7 +15,7 @@ const Footer = () => {
               Welcome to our consultancy agency. Lore ipsum simply text amet
               cing elit simply text amet cing elit.
             </p>
-            <div className="h-[1px] bg-primary-100 w-full xl:w-[467px]">
+            <div className="h-[1px] bg-primary-100 w-full xl:w-[367px]"></div>
               <ul className="pt-20 text-lg space-y-4 text-primary-100">
                 <li className="flex gap-2 items-center">
                   <img
@@ -35,11 +35,11 @@ const Footer = () => {
                   66 Broklyn Street New York, USA
                 </li>
               </ul>
-            </div>
+            
           </div>
         </div>
         <div className="space-y-20">
-          <p className="text-gray-50 text-xl font-bold">EXPLORE</p>
+          <p className="text-gray-50 text-xl md:mt-0 mt-32 font-bold">EXPLORE</p>
           <div className="flex gap-10">
             <div>
               <ul className="space-y-10 xl:text-base text-primary-100 font-bold">
@@ -62,11 +62,11 @@ const Footer = () => {
         </div>
         <div className="space-y-20 xl:space-y-48">
           <p className="text-gray-50 text-xl font-bold">NEWSLETTER</p>
-          <div className="xl:w-[491px] h-[205px] bg-[#06050C] gap-10 flex flex-col xl:pl-12 p-3 justify-center">
+          <div className="xl:w-[430px] md:w-[520px] lg:w-[520px] h-[205px] bg-[#06050C] gap-10 flex flex-col xl:pl-12 lg:p-5 p-3 justify-center">
             <p className="text-lg text-primary-100 w-[352px] text-left">
               Subscribe for latest articles and resources
             </p>
-            <div className="xl:w-[354px] flex justify-around items-center bg-white h-[65px]">
+            <div className="xl:w-[354px] lg:w-[450px] flex justify-between p-2 items-center bg-white h-[65px]">
               <p className="text-sm text-primary-100 font-bold">
                 Email address
               </p>

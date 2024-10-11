@@ -10,10 +10,10 @@ import DefaultWidth from "./tools/DefaultWidth";
 
 const Testimony = () => {
   return (
-    <DefaultWidth className="">
-      <div className="flex xl:flex-row flex-col items-center justify-between">
+    <DefaultWidth className="xl:max-w-[80vw] max-w-[80vw]">
+      <div className="flex xl:flex-row xm:flex-col flex-col items-center justify-between">
         <div className="space-y-8">
-          <p className="text-4xl text-center xl:text-left xl:text-5xl font-bold max-w-[451px] ">
+          <p className="text-4xl text-center xl:text-left xl:text-5xl font-bold max-w-[390px] ">
             WHAT THEY ARE TALKING ABOUT?
           </p>
           <p className="text-center xl:text-left text-sm text-primary-100">
@@ -56,8 +56,8 @@ const Testimony = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="translate-y-40 xl:translate-y-32 translate-x-10 xl:-translate-x-[305px] h-10 w-10 items-center" />
-            <CarouselNext className="translate-y-40 xl:translate-y-32 translate-x-10 left-64 xl:-translate-x-[305px] h-10 w-10 items-center lg:left-0" />
+            <CarouselPrevious className="translate-y-40 xl:translate-y-32 -left-[500px]. h-10 w-10 items-center" />
+            <CarouselNext className="translate-y-40 xl:translate-y-32 -left-[435px]. h-10 w-10 items-center" />
           </Carousel>
         </div>
       </div>

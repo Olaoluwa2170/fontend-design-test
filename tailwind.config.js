@@ -7,6 +7,9 @@ export default {
       fontFamily: {
         jost: ["Jost, sans-serif"],
       },
+      screens: {
+        'xm': '1279px'
+      },
       colors: {
         primary: {
           100: "#707070",

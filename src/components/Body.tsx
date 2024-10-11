@@ -19,7 +19,7 @@ const Body = () => {
           alt=""
         />
         <DefaultWidth className="max-w-[80vw] ">
-          <div className="flex lg:flex-row flex-col gap-8 xl:gap-0 py-[100px] justify-between items-center">
+          <div className="flex lg:flex-row flex-col gap-8 xl:gap-5 py-[100px] justify-between items-center">
             <div>
               <img src="./market.png" alt="word" className="w-[600px]" />
             </div>
@@ -106,7 +106,7 @@ const Body = () => {
           <p className="text-lg text-primary-100 text-center mt-2">
             We help our clients renew their business
           </p>
-          <div className="grid lg:grid-cols-3 place-items-center grid-cols-1 md:gap-10 xl:gap-5 mt-10">
+          <div className="grid lg:grid-cols-3 place-items-center grid-cols-1 md:gap-10 gap-3 xl:gap-5 mt-10">
           <div className="xl:w-[290px] bg-primary-100 flex items-end lg:h-[25.625rem] h-[15.625rem]">
               <div className="hover:bg-primary-t200 duration-500 cursor-pointer p-5">
                 <img src="./automobile.png" className="pb-2" alt="" />
@@ -286,13 +286,13 @@ const Body = () => {
           <BusinessComponent
             text={{ h1: "HIGHEST SUCCESS RATES", h2: "HIGHEST SUCCESS RATES" }}
             className={cn({
-              "translate-x-[500px] lg:translate-x-[2000px] absolute": !first,
+              "translate-x-[5000px] xl:translate-x-[2000px] absolute": !first,
             })}
           />
           <BusinessComponent
             text={{ h1: "COORDINATED BUSINESS", h2: "COORDINATED BUSINESS" }}
             className={cn("", {
-              "translate-x-[500px] lg:translate-x-[2000px] absolute": !second,
+              "translate-x-[5000px] xl:translate-x-[2000px] absolute": !second,
             })}
           />
           <BusinessComponent
@@ -301,7 +301,7 @@ const Body = () => {
               h2: "GREAT CUSTOMER SERVICE",
             }}
             className={cn("", {
-              "translate-x-[500px] lg:translate-x-[2000px] absolute": !third,
+              "translate-x-[5000px] xl:translate-x-[2000px] absolute": !third,
             })}
           />
         </div>
@@ -317,8 +317,8 @@ const BusinessComponent: React.FC<{
   text: { h1: string; h2: string };
 }> = ({ className, text }) => {
   return (
-    <DefaultWidth className={cn(className, "flex gap-20 items-end")}>
-      <div className="lg:border-r border-r-primary-100 pr-5">
+    <DefaultWidth className={cn(className, "flex gap-20 items-end justify-center")}>
+      <div className="">
         <div>
           <div className="flex items-center lg:gap-6 gap-2 mt-8">
             <div className="lg:w-[4.375rem] w-[50px] flex justify-center bg-[#EBF1FF] items-center lg:h-[4.375rem] h-[50px]">
@@ -349,13 +349,13 @@ const BusinessComponent: React.FC<{
         </div>
       </div>
 
-      <div className="lg:block md:block lg:space-y-10 xl:space-y-32 hidden ">
-        <p className="text-primary-100 text-lg">
+      <div className="lg:block md:block md:space-y-10 lg:space-y-10 pl-8  border-l-primary-100 md:border-l xl:space-y-[100px] hidden ">
+        <p className="text-primary-100 sm:text-sm lg:text-lg">
           There are many variations of passages of lorem ipsum available, but
           the majority have suffered alteration in some form injected humour or
           randomised words which don't look believable.
         </p>
-        <ul className="list-disc text-primary-100">
+        <ul className="list-disc lg:text-base sm:text-sm text-primary-100">
           <li>Lorem ipsum dolor sit amet consectetur.</li>
           <li>Lorem ipsum dolor sit amet consectetur.</li>
           <li>Lorem ipsum dolor sit amet consectetur.</li>

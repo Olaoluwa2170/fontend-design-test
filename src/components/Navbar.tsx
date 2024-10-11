@@ -58,7 +58,7 @@ const Navbar = () => {
             </div>
           </div>
           <div>
-            <ul className="lg:flex hidden pl-20 font-jost text-white font-semibold text-lg">
+            <ul className="lg:flex hidden pl-1 xl:pl-20 font-jost text-white font-semibold text-lg">
               {navLink.map((link) => (
                 <li
                   className="px-3 cursor-pointer text-xs xl:text-sm flex gap-1"
