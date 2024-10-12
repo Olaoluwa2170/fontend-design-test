@@ -10,7 +10,7 @@ const Navbar = () => {
       className={cn(
         "lg:min-h-[5rem] lg:h-fit h-[5rem] overflow-hidden w-full bg-primary-100 border-b duration-300 border-white fixed top-0 z-10",
         {
-          "md:h-[40vh]  h-[60vh]": click,
+          "md:h-[70vh] lg:h-[70vh] h-[80vh]": click,
         },
       )}
     >
@@ -103,7 +103,7 @@ const Navbar = () => {
             <li
               key={link}
               className={cn(
-                "py-1 font-jost  text-gray-200 font-semibold text-lg",
+                "py-1 font-jost cursor-pointer text-gray-200 font-semibold text-lg",
               )}
             >
               {link}
